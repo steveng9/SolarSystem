@@ -9,7 +9,7 @@
 	window.onload = function () {
 
 		socket.on("load", function (data) {
-			console.log(data.data);
+			console.log(data);
 			gameEngine.load(data.data);
 		});
 

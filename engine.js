@@ -218,7 +218,6 @@ class GameEngine {
 	}
 
 	load(data) {
-		console.log(data);
 		var that = this;
 		this.star = new Star(this, data.star.x, data.star.y);
 		this.star.deltaX = data.star.deltaX;
@@ -330,12 +329,10 @@ var getRandomColor = function() {
 }
 
 var weightedAverageOfColors = function(body1, body2) {
-	console.log(body1.color);
 	// dont weight colors by mass, or the difference will be less noticable 
 	finalRgb = new RGB((body1.color.r * body1.circle.radius + body2.color.r * body2.circle.radius) / (body1.circle.radius + body2.circle.radius),
 						(body1.color.g * body1.circle.radius + body2.color.g * body2.circle.radius) / (body1.circle.radius + body2.circle.radius),
 						(body1.color.b * body1.circle.radius + body2.color.b * body2.circle.radius) / (body1.circle.radius + body2.circle.radius));
-	console.log(finalRgb);
 	return finalRgb;
 
 }
