@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Solar System</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body>
-    <canvas id="solarSystemSim" tabindex="1" width="1133" height="700" style="border: 1px solid black; background: black"></canvas>
-    <script type="text/javascript" src="http://24.16.255.56:8888/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="./engine.js"></script>
-    <script type="text/javascript" src="./planet.js"></script>
-    <script type="text/javascript" src="./main.js"></script>
-    <div id = "text"></div>
-    <button id="save" type="button">Save</button>
-    <button id="load" type="button">Load</button>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Solar System</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<canvas id="solarSystemSim" tabindex="1" width="1133" height="700" style="border: 1px solid black; background: black"></canvas>
+		<script type="text/javascript" src="http://24.16.255.56:8888/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="./engine.js"></script>
+		<script type="text/javascript" src="./planet.js"></script>
+		<script type="text/javascript" src="./main.js"></script>
+	</body>
+	<footer>
+		<div id = "text"></div>
+		<button id="save" type="button">Save</button>
+		<button id="load" type="button">Load</button>
+	</footer>
 </html>
